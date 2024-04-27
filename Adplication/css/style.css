@@ -1,0 +1,174 @@
+@media only screen and (max-width: 1000px) {
+  #wrapper {
+      display: none;
+  }
+}
+
+body {
+  background: white;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 725px;
+  margin: 0px auto;
+}
+
+.gears {
+  width: 10%; /* Adjusted width to accommodate three gears */
+  display: inline-block;
+  margin-right: 1%; /* Reduced margin between gears */
+  margin-left: 2%; /* Reduced margin between gears */
+}
+
+.gears:first-child {
+  margin-left: 30%; /* No margin on the left side of the first gear */
+}
+
+.gears-container {
+  width: 357px;
+  height: 150px;
+  font-size: 24px;
+  padding: 9%;
+  position: relative;
+  margin: 0px auto;
+}
+
+.gear-rotate {
+  width: 2em;
+  height: 2em;
+  top: 50%;
+  left: 50%;
+  margin-top: -1em;
+  margin-left: -1em;
+  background: green;
+  position: absolute;
+  border-radius: 1em;
+  animation: 1s gear-rotate linear infinite;
+}
+
+.gear-rotate-left {
+  margin-top: -2.2em;
+  top: 47%;
+  left:30%;
+  width: 2em;
+  height: 2em;
+  background: green;
+  position: absolute;
+  border-radius: 1em;
+  animation: 1s gear-rotate-left linear infinite;
+}
+
+.gear-rotate::before,
+.gear-rotate-left::before {
+  width: 2.8em;
+  height: 2.8em;
+  background: -webkit-linear-gradient(0deg, transparent 39%, black 39%, black 61%, transparent 61%),
+      -webkit-linear-gradient(60deg, transparent 42%, black 42%, black 58%, transparent 58%),
+      -webkit-linear-gradient(120deg, transparent 42%, black 42%, black 58%, transparent 58%);
+  background: -moz-linear-gradient(0deg, transparent 39%, black 39%, black 61%, transparent 61%),
+      -moz-linear-gradient(60deg, transparent 42%, black 42%, black 58%, transparent 58%),
+      -moz-linear-gradient(120deg, transparent 42%, black 42%, black 58%, transparent 58%);
+  background: -o-linear-gradient(0deg, transparent 39%, black 39%, black 61%, transparent 61%),
+      -o-linear-gradient(60deg, transparent 42%, black 42%, black 58%, transparent 58%),
+      -o-linear-gradient(120deg, transparent 42%, black 42%, black 58%, transparent 58%);
+  background: -ms-linear-gradient(0deg, transparent 39%, black 39%, black 61%, transparent 61%),
+      -ms-linear-gradient(60deg, transparent 42%, black 42%, black 58%, transparent 58%),
+      -ms-linear-gradient(120deg, transparent 42%, black 42%, black 58%, transparent 58%);
+  background: linear-gradient(0deg, transparent 39%, black 39%, black 61%, transparent 61%),
+      linear-gradient(60deg, transparent 42%, black 42%, black 58%, transparent 58%),
+      linear-gradient(120deg, transparent 42%, black 42%, black 58%, transparent 58%);
+  position: absolute;
+  content: "";
+  top: -.4em;
+  left: -.4em;
+  border-radius: 1.4em;
+}
+
+.gear-rotate::after,
+.gear-rotate-left::after {
+  width: 1em;
+  height: 1em;
+  background: white;
+  position: absolute;
+  content: "";
+  top: .5em;
+  left: .5em;
+  border-radius: .5em;
+}
+
+/*
+* Keyframe Animations 
+*/
+
+@keyframes gear-rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(-180deg);
+  }
+}
+
+@keyframes gear-rotate-left {
+  0% {
+      transform: rotate(30deg);
+  }
+
+  100% {
+      transform: rotate(210deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #Head {
+      font-size: 2.3rem;
+      letter-spacing: -.07rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #Head {
+      font-size: 1.8rem;
+      letter-spacing: -.07rem;
+  }
+  .l{
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #Head2 {
+      font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #Head2 {
+      font-size: 2.0rem;
+  }
+  .q{
+    h4 {
+      font-size: 1.7rem;
+  }
+  }
+}
+@media only screen and (max-width: 815px) {
+  #Head2 {
+      font-size: 2.2rem;
+  }
+  .l{
+    display:none;
+  }
+  .home-content__buttons .btn {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #Head2{
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .g{
+    text-align: justify;  
+    font-size: 1.8rem;
+  }
+}
